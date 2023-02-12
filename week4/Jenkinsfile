@@ -11,10 +11,8 @@ volumes:[
         claimName:"jenkins-pv-claim" ,
         readOnly:false
     )
-]
-
-
-) {
+])
+{
 node(POD_LABEL) {
 stage('Get a Maven project') {
 git
